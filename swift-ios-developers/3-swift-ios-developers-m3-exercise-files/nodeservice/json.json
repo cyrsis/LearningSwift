@@ -1,0 +1,99 @@
+{
+  "host": "JonsRetina.local",
+  "totalMemory": 17179869184,
+  "freeMemory": 2550501376,
+  "tempDirectory": "/var/folders/87/7cbc3c_d5yvcqr1g9vz3n25r0000gn/T",
+  "uptime": 1205133,
+  "type": "Darwin",
+  "platform": "darwin",
+  "cpus": [
+    {
+      "model": "Intel(R) Core(TM) i7-3720QM CPU @ 2.60GHz",
+      "speed": 2600,
+      "times": {
+        "user": 28446650,
+        "nice": 0,
+        "sys": 91900760,
+        "idle": 1015983600,
+        "irq": 0
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i7-3720QM CPU @ 2.60GHz",
+      "speed": 2600,
+      "times": {
+        "user": 810230,
+        "nice": 0,
+        "sys": 1425050,
+        "idle": 1134093980,
+        "irq": 0
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i7-3720QM CPU @ 2.60GHz",
+      "speed": 2600,
+      "times": {
+        "user": 18581600,
+        "nice": 0,
+        "sys": 20224780,
+        "idle": 1097522900,
+        "irq": 0
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i7-3720QM CPU @ 2.60GHz",
+      "speed": 2600,
+      "times": {
+        "user": 859610,
+        "nice": 0,
+        "sys": 1373300,
+        "idle": 1134096340,
+        "irq": 0
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i7-3720QM CPU @ 2.60GHz",
+      "speed": 2600,
+      "times": {
+        "user": 18452470,
+        "nice": 0,
+        "sys": 18670730,
+        "idle": 1099206080,
+        "irq": 0
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i7-3720QM CPU @ 2.60GHz",
+      "speed": 2600,
+      "times": {
+        "user": 861790,
+        "nice": 0,
+        "sys": 1411080,
+        "idle": 1134056390,
+        "irq": 0
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i7-3720QM CPU @ 2.60GHz",
+      "speed": 2600,
+      "times": {
+        "user": 17865710,
+        "nice": 0,
+        "sys": 17315390,
+        "idle": 1101148170,
+        "irq": 0
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i7-3720QM CPU @ 2.60GHz",
+      "speed": 2600,
+      "times": {
+        "user": 869880,
+        "nice": 0,
+        "sys": 1411470,
+        "idle": 1134047900,
+        "irq": 0
+      }
+    }
+  ]
+}
