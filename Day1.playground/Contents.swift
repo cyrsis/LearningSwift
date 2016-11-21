@@ -16,5 +16,13 @@ func convertsStringInterger(str:String)->Int?{ //Can be a global function
 
 return Int(str)
 }
+if let i = convertsStringInterger(str:strNumber){
+i.bigEndian
+}else{
+  // Check Types conversations
+    // Try let strNumber to N123s
+  print("number could not be turned into an integer")
+}
 
-let i = convertsStringInterger(str:strNumber)
+
+
