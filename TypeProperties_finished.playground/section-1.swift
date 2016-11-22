@@ -23,19 +23,19 @@ class BankAccount {
             balance -= amount
             return true
         } else {
-            println("Insufficient funds")
+            print("Insufficient funds")
             return false
         }
     }
     class func example() {
         // Type methods CANNOT access instance data
-        println("Interest rate is \(self.interestRate)")
+        print("Interest rate is \(self.interestRate)")
     }
     // etc..
 }
 
-//var firstAccount = BankAccount(num: 11221122,initialBalance: 1000.0)
-//var secondAccount = BankAccount(num: 22113322, initialBalance: 4543.54)
+var firstAccount = BankAccount(num: 11221122,initialBalance: 1000.0)
+var secondAccount = BankAccount(num: 22113322, initialBalance: 4543.54)
 BankAccount.interestRate
 BankAccount.example()
 
