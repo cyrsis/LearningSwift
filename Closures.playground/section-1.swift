@@ -7,7 +7,7 @@ let names = ["Al", "Ann", "Alex", "Alice", "Audrey"]
 
 // Returns `true` if name < 4 bytes long (in UTF8)
 func isShortName(name: String) -> Bool {
-    return name.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) < 4
+    return name.lengthOfBytes(using: String.Encoding.utf8) < 4
 }
 
 // Returns a closure that returns `true` if the
@@ -15,18 +15,18 @@ func isShortName(name: String) -> Bool {
 // This parameter defaults to 3 if not defined
 func nameWithMaxLength(max: Int = 3) -> (String) -> Bool {
     return { (name: String) in
-        return name.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) < max
+        return name.lengthOfBytes(using: String.Encoding.utf8) < max
     }
 }
 
 // In-line filtering with a closure
-println(names.filter() { $0.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) < 3 })
+print(names.filter() { $0.lengthOfBytes(using: String.Encoding.utf8) < 3 })
 
 // Filtering with a named function
-println(names.filter(isShortName))
+print(names.filter(isShortName))
 
 // Filtering with a generated function and parameter
-println(names.filter(nameWithMaxLength(max: 4)))
+print(names.filter(nameWithMaxLength(max: 7)))
 
 // Filtering with a generated function (default value)
-println(names.filter(nameWithMaxLength()))
+print(names.filter(nameWithMaxLength()))
