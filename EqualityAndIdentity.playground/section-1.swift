@@ -14,14 +14,14 @@ dateB.day =  01
 
 // check EQUALITY: ==
 if dateA == dateB {
-    println("Yes, dateA and dateB are equal to each other")
+    print("Yes, dateA and dateB are equal to each other")
 }
 
 // check IDENTITY: ===
 if dateA === dateB {
-    println("They're identical.")
+    print("They're identical.")
 } else {
-    println("They might be equal, but they're not identical.")
+    print("They might be equal, but they're not identical.")
 }
 
 
@@ -29,6 +29,6 @@ if dateA === dateB {
 var dateC = dateA // By Reference
 
 if dateA === dateC {
-    println("Yes, dateA and dateC are identical - they refer to the same object.")
+    print("Yes, dateA and dateC are identical - they refer to the same object.")
 }
 
