@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayoutSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCt-wW-uC1" userLabel="Green View">
+                                <rect key="frame" x="20" y="20" width="560" height="128"/>
+                                <color key="backgroundColor" red="0.21605854547984715" green="1" blue="0.31962100441198404" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="C4L-Cd-hel"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGH-hc-PTi" userLabel="Blue View">
+                                <rect key="frame" x="20" y="248" width="560" height="352"/>
+                                <color key="backgroundColor" red="0.28169169711437214" green="0.64692107627912065" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="cGH-hc-PTi" secondAttribute="trailing" id="20Q-gg-pCf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cGH-hc-PTi" secondAttribute="bottom" id="2JO-oW-nK9"/>
+                            <constraint firstItem="cGH-hc-PTi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Amb-at-J2S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oCt-wW-uC1" secondAttribute="trailing" id="EwZ-La-jgu"/>
+                            <constraint firstItem="oCt-wW-uC1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Mi4-FE-o46"/>
+                            <constraint firstItem="cGH-hc-PTi" firstAttribute="top" secondItem="oCt-wW-uC1" secondAttribute="bottom" constant="100" id="plN-4Z-uXL"/>
+                            <constraint firstItem="oCt-wW-uC1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vMp-2W-rdO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

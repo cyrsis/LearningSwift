@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="pY4-Hu-kfo">
+            <objects>
+                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RjB-NG-AoD" kind="relationship" relationship="rootViewController" id="VZg-Y2-hp2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-630"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="eBQ-jr-74u">
+            <objects>
+                <viewController id="RjB-NG-AoD" customClass="MainViewController" customModule="Collaborate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cpY-eh-Nsa"/>
+                        <viewControllerLayoutGuide type="bottom" id="nKn-mf-5Y9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vis-As-seo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef0-w5-l2j">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSF-1b-UXf" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="528"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MTt-Ed-kQB">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="528"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PartnerInCrime" translatesAutoresizingMaskIntoConstraints="NO" id="OZz-0D-cCy">
+                                                        <rect key="frame" x="211" y="0.0" width="178" height="178"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enT-7d-4Z9">
+                                                        <rect key="frame" x="270" y="198" width="60" height="30"/>
+                                                        <state key="normal" title="PROFILE"/>
+                                                        <connections>
+                                                            <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="ShowProfile" id="uBb-Fg-Vub"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ild-1q-tcy">
+                                                        <rect key="frame" x="237" y="248" width="127" height="30"/>
+                                                        <state key="normal" title="COLLABORATORS"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMr-B9-NTd">
+                                                        <rect key="frame" x="275" y="298" width="50" height="30"/>
+                                                        <state key="normal" title="GOALS"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsK-3P-eFd">
+                                                        <rect key="frame" x="281" y="348" width="39" height="30"/>
+                                                        <state key="normal" title="JOBS"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suy-Rd-GGE">
+                                                        <rect key="frame" x="261" y="398" width="79" height="30"/>
+                                                        <state key="normal" title="MESSAGES"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIf-Lf-zxH">
+                                                        <rect key="frame" x="264" y="448" width="72" height="30"/>
+                                                        <state key="normal" title="SETTINGS"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke1-Zp-Noh">
+                                                        <rect key="frame" x="269" y="498" width="62" height="30"/>
+                                                        <state key="normal" title="LOGOUT"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="MTt-Ed-kQB" firstAttribute="leading" secondItem="gSF-1b-UXf" secondAttribute="leading" id="71I-lA-5bi"/>
+                                            <constraint firstAttribute="bottom" secondItem="MTt-Ed-kQB" secondAttribute="bottom" id="lnE-Le-j2N"/>
+                                            <constraint firstAttribute="trailing" secondItem="MTt-Ed-kQB" secondAttribute="trailing" id="mSG-zK-f8f"/>
+                                            <constraint firstItem="MTt-Ed-kQB" firstAttribute="top" secondItem="gSF-1b-UXf" secondAttribute="top" id="sXM-Hn-mrw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gSF-1b-UXf" secondAttribute="bottom" id="Dvv-38-ybQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="gSF-1b-UXf" secondAttribute="trailing" id="Z0X-e8-y9h"/>
+                                    <constraint firstItem="gSF-1b-UXf" firstAttribute="top" secondItem="Ef0-w5-l2j" secondAttribute="top" id="aBn-pX-UaV"/>
+                                    <constraint firstItem="gSF-1b-UXf" firstAttribute="leading" secondItem="Ef0-w5-l2j" secondAttribute="leading" id="i8g-0l-XM3"/>
+                                    <constraint firstItem="gSF-1b-UXf" firstAttribute="width" secondItem="Ef0-w5-l2j" secondAttribute="width" id="wkF-Gj-14B"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ef0-w5-l2j" secondAttribute="trailing" id="Eac-OC-hYi"/>
+                            <constraint firstItem="Ef0-w5-l2j" firstAttribute="top" secondItem="Vis-As-seo" secondAttribute="top" id="NVJ-Xf-ZDy"/>
+                            <constraint firstItem="nKn-mf-5Y9" firstAttribute="top" secondItem="Ef0-w5-l2j" secondAttribute="bottom" id="fzx-8j-CYG"/>
+                            <constraint firstItem="Ef0-w5-l2j" firstAttribute="leading" secondItem="Vis-As-seo" secondAttribute="leading" id="uXE-xu-pkJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="woB-I9-ZH3"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="ShowDetail" id="H8A-R1-6AM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1X7-ci-yhO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="-628"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="yUG-lL-AsK">
+            <objects>
+                <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="Collaborate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
+                        <viewControllerLayoutGuide type="bottom" id="GAO-Cl-Wes"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="svH-Pt-448">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qda-dr-WQX" customClass="ProfileView" customModule="Collaborate" customModuleProvider="target">
+                                <rect key="frame" x="73" y="161" width="62" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="profileImage" value="Bill"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="networkImage" value="CompactMedium"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hrb-AR-nfk" customClass="ProfileView" customModule="Collaborate" customModuleProvider="target">
+                                <rect key="frame" x="143" y="106" width="58" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="profileImage" value="Bill"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="networkImage" value="CompactGitHub"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sx3-Jd-rW0" customClass="ProfileView" customModule="Collaborate" customModuleProvider="target">
+                                <rect key="frame" x="73" y="236" width="55" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="profileImage" value="Bill"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="networkImage" value="CompactFacebook"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qda-dr-WQX" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="53" id="1xJ-zA-gFB"/>
+                            <constraint firstItem="qda-dr-WQX" firstAttribute="top" secondItem="hrb-AR-nfk" secondAttribute="bottom" constant="0.25" id="GVs-Qg-Z5C"/>
+                            <constraint firstItem="Sx3-Jd-rW0" firstAttribute="trailing" secondItem="qda-dr-WQX" secondAttribute="trailing" id="Iwy-Nq-VGk"/>
+                            <constraint firstItem="qda-dr-WQX" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="97" id="Lue-hG-eGH"/>
+                            <constraint firstItem="qda-dr-WQX" firstAttribute="top" secondItem="hrb-AR-nfk" secondAttribute="bottom" id="YOB-DA-U8Z"/>
+                            <constraint firstItem="hrb-AR-nfk" firstAttribute="leading" secondItem="qda-dr-WQX" secondAttribute="trailing" constant="14.75" id="c27-dT-igx"/>
+                            <constraint firstItem="hrb-AR-nfk" firstAttribute="leading" secondItem="qda-dr-WQX" secondAttribute="trailing" constant="15" id="q0W-gN-ZNT"/>
+                            <constraint firstItem="Sx3-Jd-rW0" firstAttribute="top" secondItem="qda-dr-WQX" secondAttribute="bottom" constant="20" id="yVg-sR-vFn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YOB-DA-U8Z"/>
+                                <exclude reference="q0W-gN-ZNT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="129"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="Nki-YV-4Qg">
+            <objects>
+                <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
+                        <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="Tll-UG-LXB"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-856" y="-330"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r7l-gg-dq7">
+            <objects>
+                <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JEX-9P-axG" kind="relationship" relationship="rootViewController" id="GKi-kA-LjT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bill" width="55" height="55"/>
+        <image name="CompactFacebook" width="11" height="21"/>
+        <image name="CompactGitHub" width="22" height="21"/>
+        <image name="CompactMedium" width="26" height="21"/>
+        <image name="PartnerInCrime" width="178" height="178"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="H8A-R1-6AM"/>
+    </inferredMetricsTieBreakers>
+</document>

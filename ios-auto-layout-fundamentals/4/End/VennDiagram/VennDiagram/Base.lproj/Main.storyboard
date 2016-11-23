@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VennDiagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvs-n6-hVd" customClass="VennDiagram" customModule="VennDiagram" customModuleProvider="target">
+                                <rect key="frame" x="40" y="40" width="520" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgN-w5-3VG" customClass="CircleView" customModule="VennDiagram" customModuleProvider="target">
+                                        <rect key="frame" x="240" y="20" width="260" height="260"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="tgN-w5-3VG" secondAttribute="height" multiplier="1:1" id="RIJ-88-Cqf"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.24320336410000001" green="0.77770990709999999" blue="1" alpha="0.37464978450000003" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMW-1m-dHJ" customClass="CircleView" customModule="VennDiagram" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="260" height="260"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="aMW-1m-dHJ" secondAttribute="height" multiplier="1:1" id="9Jj-mW-BVe"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.460814165" green="1" blue="0.40659036990000003" alpha="0.37464978450000003" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aMW-1m-dHJ" firstAttribute="top" secondItem="Dvs-n6-hVd" secondAttribute="top" constant="20" id="0Z1-uQ-ZCZ"/>
+                                    <constraint firstItem="tgN-w5-3VG" firstAttribute="leading" secondItem="aMW-1m-dHJ" secondAttribute="trailing" constant="-40" id="0fo-68-VCH"/>
+                                    <constraint firstAttribute="bottom" secondItem="aMW-1m-dHJ" secondAttribute="bottom" constant="20" id="Hao-HD-6Y0"/>
+                                    <constraint firstAttribute="bottom" secondItem="tgN-w5-3VG" secondAttribute="bottom" constant="20" id="MzY-YQ-eUZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="tgN-w5-3VG" secondAttribute="trailing" constant="20" id="OQH-wY-TkF"/>
+                                    <constraint firstItem="aMW-1m-dHJ" firstAttribute="leading" secondItem="Dvs-n6-hVd" secondAttribute="leading" constant="20" id="PfB-mg-Ovf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="XA5-TG-VkL"/>
+                                    <constraint firstItem="tgN-w5-3VG" firstAttribute="top" secondItem="Dvs-n6-hVd" secondAttribute="top" constant="20" id="yr1-Js-Db3"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="leftCircleBottomConstraint" destination="Hao-HD-6Y0" id="aMe-cr-Rh2"/>
+                                    <outlet property="leftCircleLeadingConstraint" destination="PfB-mg-Ovf" id="cJp-fA-SJJ"/>
+                                    <outlet property="leftCircleTopConstraint" destination="0Z1-uQ-ZCZ" id="wsR-sr-3WS"/>
+                                    <outlet property="rightCircleBottomConstraint" destination="MzY-YQ-eUZ" id="cVO-kg-vmd"/>
+                                    <outlet property="rightCircleTopConstraint" destination="yr1-Js-Db3" id="hzk-oQ-e6W"/>
+                                    <outlet property="rightCircleTrailingConstraint" destination="OQH-wY-TkF" id="YaC-23-yyn"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB8-fv-dWW">
+                                <rect key="frame" x="0.0" y="556" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SAX-l9-It9"/>
+                                </constraints>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="leftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fhv-WJ-VFA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOh-ya-eeH">
+                                <rect key="frame" x="200" y="556" width="200" height="44"/>
+                                <state key="normal" title="Balanced"/>
+                                <connections>
+                                    <action selector="balancedTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6Q-72-8vp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMw-Ft-DKo">
+                                <rect key="frame" x="400" y="556" width="200" height="44"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="rightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppz-a6-rh4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VOh-ya-eeH" firstAttribute="leading" secondItem="bB8-fv-dWW" secondAttribute="trailing" id="2dC-NJ-UZl"/>
+                            <constraint firstItem="EMw-Ft-DKo" firstAttribute="leading" secondItem="VOh-ya-eeH" secondAttribute="trailing" id="7Uw-S4-LJ6"/>
+                            <constraint firstItem="VOh-ya-eeH" firstAttribute="top" secondItem="EMw-Ft-DKo" secondAttribute="top" id="8Jf-6I-gOt"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Dvs-n6-hVd" secondAttribute="trailing" constant="20" id="Fm4-CB-lFm"/>
+                            <constraint firstItem="VOh-ya-eeH" firstAttribute="width" secondItem="EMw-Ft-DKo" secondAttribute="width" id="GFM-ug-YwZ"/>
+                            <constraint firstItem="bB8-fv-dWW" firstAttribute="width" secondItem="VOh-ya-eeH" secondAttribute="width" id="JSE-Vj-jRb"/>
+                            <constraint firstItem="bB8-fv-dWW" firstAttribute="top" secondItem="VOh-ya-eeH" secondAttribute="top" id="LIy-IZ-qj1"/>
+                            <constraint firstItem="Dvs-n6-hVd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Mch-Ym-A5h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bB8-fv-dWW" secondAttribute="bottom" id="YBM-I2-4nZ"/>
+                            <constraint firstItem="VOh-ya-eeH" firstAttribute="leading" secondItem="bB8-fv-dWW" secondAttribute="trailing" id="d5Y-sW-2Df"/>
+                            <constraint firstItem="bB8-fv-dWW" firstAttribute="bottom" secondItem="VOh-ya-eeH" secondAttribute="bottom" id="dTR-5v-pNh"/>
+                            <constraint firstItem="Dvs-n6-hVd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edN-xE-CGi"/>
+                            <constraint firstItem="VOh-ya-eeH" firstAttribute="leading" secondItem="bB8-fv-dWW" secondAttribute="trailing" id="fbG-Tk-Bk9"/>
+                            <constraint firstItem="Dvs-n6-hVd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ftI-8Z-YxU"/>
+                            <constraint firstItem="Dvs-n6-hVd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" priority="990" constant="20" id="g1v-St-4V4"/>
+                            <constraint firstItem="bB8-fv-dWW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gW3-ky-qOV"/>
+                            <constraint firstItem="VOh-ya-eeH" firstAttribute="bottom" secondItem="EMw-Ft-DKo" secondAttribute="bottom" id="hKz-d5-O9L"/>
+                            <constraint firstAttribute="trailing" secondItem="EMw-Ft-DKo" secondAttribute="trailing" id="pWP-NP-6Mp"/>
+                            <constraint firstItem="bB8-fv-dWW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Dvs-n6-hVd" secondAttribute="bottom" constant="8" id="snV-Ns-bJc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vennDiagram" destination="Dvs-n6-hVd" id="4tT-OT-mWD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="374"/>
+        </scene>
+    </scenes>
+</document>
