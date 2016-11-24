@@ -19,7 +19,7 @@ class ViewController: UITableViewController {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         navigationController?.navigationBar.alpha = 0.5
@@ -30,22 +30,22 @@ class ViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("customcell") as UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customcell")! as UITableViewCell
         
         if(indexPath.item % 2 == 0){
-            cell.backgroundColor = UIColor.clearColor()
+            cell.backgroundColor = UIColor.clear
         }
         else {
-            cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
-            cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
+            cell.backgroundColor = UIColor.white.withAlphaComponent(0.2)
+            cell.textLabel?.backgroundColor = UIColor.white.withAlphaComponent(0.0)
         }
         
-        cell.textLabel?.textColor = UIColor.whiteColor()
+        cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.text = array[indexPath.item]
         return cell
     }

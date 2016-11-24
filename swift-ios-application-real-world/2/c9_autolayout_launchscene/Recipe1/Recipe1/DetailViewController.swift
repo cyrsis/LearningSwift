@@ -16,7 +16,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        recipeContent.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+        recipeContent.backgroundColor = UIColor.black.withAlphaComponent(0.2)
 
     }
 

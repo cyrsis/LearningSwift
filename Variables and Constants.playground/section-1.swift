@@ -57,7 +57,7 @@ struct Name {
     var last: String
 }
 
-let av = Name(first: "Alex", last: "Vollmer")
+var av = Name(first: "Alex", last: "Vollmer")
 av.last = "The Great"
 
 

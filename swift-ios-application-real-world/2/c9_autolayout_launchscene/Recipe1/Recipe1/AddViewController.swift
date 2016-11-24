@@ -19,8 +19,8 @@ class AddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        titleText.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
-        recipeContent.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.2)
+        titleText.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        recipeContent.backgroundColor = UIColor.black.withAlphaComponent(0.2)
 
     }
 

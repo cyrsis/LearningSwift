@@ -1,4 +1,4 @@
-// Playground - noun: a place where people can play
+String.Encoding.utf8// Playground - noun: a place where people can play
 
 import UIKit
 
@@ -16,7 +16,7 @@ enum CardType: String {
     private func regularExpression() -> NSRegularExpression {
         switch self {
             case .Visa:
-                return NSRegularExpression(pattern: "^4[0-9]{12}(?:[0-9]{3})?$", options: nil, error: nil)
+                return NSRegularExpression(pattern: "^4[0-9]{12}(?:[0-9]{3})?$", options:[.caseInsensitive])
             case .AmericanExpress:
                 return NSRegularExpression(pattern: "^3[47][0-9]{13}$", options: nil, error: nil)
             case .Mastercard:
@@ -30,7 +30,7 @@ enum CardType: String {
     
     func isValidFor(cardNumber: String) -> Bool {
         let re = self.regularExpression()
-        let range = NSRange(0..<cardNumber.lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
+        let range = NSRange(0..<cardNumber.lengthOfBytesUsingEncoding(String.Encoding.utf8))
         let matches = re.numberOfMatchesInString(cardNumber, options: nil, range:range)
         return matches > 0
     }
