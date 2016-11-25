@@ -5,6 +5,7 @@ import UIKit
 
 let names = ["Al", "Ann", "Alex", "Alice", "Audrey"]
 
+
 // Returns `true` if name < 4 bytes long (in UTF8)
 func isShortName(name: String) -> Bool {
     return name.lengthOfBytes(using: String.Encoding.utf8) < 4
