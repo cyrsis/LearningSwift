@@ -28,11 +28,11 @@ class Player {
 }
 
 var firstPlayer = Player() //  init() is automatically called
-println(firstPlayer.description())
+print(firstPlayer.description())
 
 // use custom initializer
 var secondPlayer = Player(name: "Alice")
-println(secondPlayer.description())
+print(secondPlayer.description())
 
 
 

@@ -38,7 +38,7 @@ class PremierPlayer : Player {
     // additional methods
     func calculateBonus() {
         self.score += 1000
-        println("New score is \(self.score)")
+        print("New score is \(self.score)")
     }
 }
 
@@ -47,7 +47,7 @@ newPlayer.description()
 //newPlayer.calculateBonus()
 
 var jake = Player()
-println(jake.description())
+print(jake.description())
 
 
 

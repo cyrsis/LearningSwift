@@ -2,7 +2,7 @@
 import UIKit
 
 func getDailyBonus() -> Int {
-    println("Performing complicated task....")
+    print("Performing complicated task....")
     return random()
 }
 
@@ -20,4 +20,4 @@ class Player {
 }
 
 var newPlayer = Player()
-println(newPlayer.bonus)
+print(newPlayer.bonus)
