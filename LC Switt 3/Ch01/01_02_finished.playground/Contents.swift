@@ -10,3 +10,7 @@ for i in 0..<64 {
     var point = sin(Double(i) * 100)
 }
 
+for s in 0..<128{
+    var point = sin(Double(s) * 100)
+    
+}
