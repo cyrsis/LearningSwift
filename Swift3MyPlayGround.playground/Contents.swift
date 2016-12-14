@@ -37,7 +37,7 @@ let 大叔 = ("老鎮",34,1.73)
 //將元群組分解成單獨的常數
 let (name2,age2,height2) = 大叔
 print("大叔叫：\(name2)")
-print("大叔年齡：\(age) 歲")
+print("大叔年齡：\(age2) 歲")
 print("大叔身高：\(height) 米")
 
 let (_,age2,_) = 大叔
